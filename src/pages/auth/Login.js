@@ -7,8 +7,8 @@ import { useDispatch,useSelector } from "react-redux";
 import {Link} from 'react-router-dom'
 
 const Login = ({ history }) => {
-  const [email, setEmail] = useState("sr9555@srmist.edu.in");
-  const [password, setPassword] = useState("sukrit@123");
+  const [email, setEmail] = useState("test@gmail.com");
+  const [password, setPassword] = useState("test1234");
   const [loading, setLoading] = useState(false);
 
   let dispatch = useDispatch();

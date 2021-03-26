@@ -14,6 +14,7 @@ const Register = ({history}) => {
      
     }, [user]);
 
+    //^Register user
   const handleSubmit = async (e) => {
     e.preventDefault();
 

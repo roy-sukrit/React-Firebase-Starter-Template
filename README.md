@@ -2,7 +2,7 @@
 
 ![](react-firebase-demo.gif)
 
-## Live Preview - https://react-firebase-starter-44276.firebaseapp.com/
+### Live Preview - https://react-firebase-starter-44276.firebaseapp.com/
 
 ## Features
 * ✔️ Login with Email.

@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# React Firebase Starter Template 🔥
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![](react-firebase-demo.gif)
 
-## Available Scripts
 
-In the project directory, you can run:
+## Features
+* ✔️ Login with Email.
+* ✔️ Login with Google.
+* ✔️ Forgot Password reset.
+* ✔️ Password Update after login.
+* ✔️ Protected Route.
+* ✔️ Redirect if not LoggedIn.
+* ✔️ Redux State Management.
+* ✔️ Light Desgin with Antd Library.
+ 
 
-### `yarn start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Firebase Setup
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+* Login to <a href=https://firebase.google.com/>Firebase</a> & create a new Project.
+* After that create a new App and copy the config variable.
+* Make sure to go to Authentication tab ---> Sign method in the console and select Email and Google Authentication as we are using these for the setup.
+* Type localhost in the authorized domains you can change this later after deployment to your custom domain
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Development Setup
 
-### `yarn build`
+* Install the code to your local machine
+```
+git clone https://github.com/roy-sukrit/React-Firebase-Starter-Template.git
+npm install
+```
+* Paste the config variable in src / firebase .js and start the server.
+```
+import firebase from 'firebase'
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+var firebaseConfig = {
+ //paste your config here
+};
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+//firebase methods  
+export const auth = firebase.auth();
+export const googleAuthProvider = new firebase.auth.GoogleAuthProvider()
+```
 
-### `yarn eject`
+```
+ npm start 
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Pull requests are more than welcomed!
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Features to add
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* Better UI
+* Chatbot
+* Better error handling
+* Admin Dashboard
